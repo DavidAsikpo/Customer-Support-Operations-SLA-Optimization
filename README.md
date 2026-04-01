@@ -168,6 +168,7 @@ Indicates lack of accountability and performance benchmarks.
 # 📊 Dashboards
 
 ---
+![Operational Dashboard](imagae/operational_dashbaord.jpeg)
 
 ## 🖥️ Operational Dashboard
 
@@ -182,6 +183,7 @@ Indicates lack of accountability and performance benchmarks.
 - Top categories  
 
 ---
+![Agent Dashboard](imagae/agent_dashbaord.jpeg)
 
 ## 👤 Agent Performance Dashboard
 
