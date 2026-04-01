@@ -210,6 +210,64 @@ daily = data.groupby("ticket_created_date").size().reset_index(name="ticket_coun
 
 daily["rolling_7"] = daily["ticket_count"].rolling(7).mean()
 
+# 🧮 DAX Measures
+
+These DAX measures were used to build the key KPIs for ticket demand, resolution performance, SLA compliance, and agent efficiency.
+
+---
+
+## Core Metrics
+
+### Ticket Count
+Counts total tickets in the current filter context.
+
+```DAX
+Ticket Count = COUNT('Joined_data (60)'[ticket_id])
+
+unts tickets that are still unresolved.
+
+Tickets Unresolved = 
+CALCULATE(
+    COUNTROWS('Joined_data (60)'),
+    'Joined_data (60)'[status] IN {"Open", "In Progress", "Pending Customer"}
+)
+
+unts tickets that are still unresolved.
+
+Tickets Unresolved = 
+CALCULATE(
+    COUNTROWS('Joined_data (60)'),
+    'Joined_data (60)'[status] IN {"Open", "In Progress", "Pending Customer"}
+)
+
+SLA Compliance % =
+VAR WithinSLA =
+    CALCULATE(
+        COUNTROWS('Joined_data (60)'),
+        'Joined_data (60)'[sla_breached_recalc] = FALSE()
+    )
+RETURN
+    DIVIDE(WithinSLA, COUNTROWS('Joined_data (60)'))
+
+SLA Breach % =
+VAR Breached =
+    CALCULATE(
+        COUNTROWS('Joined_data (60)'),
+        'Joined_data (60)'[sla_breached_recalc] = TRUE()
+    )
+RETURN
+    DIVIDE(Breached, COUNTROWS('Joined_data (60)'))
+
+Performance Rank =
+RANKX(
+    ALL('Joined_data (60)'[agent_id]),
+    [Performance Score],
+    ,
+    DESC
+)
+
+
+```
 
 # 📌 Recommendations
 
@@ -288,13 +346,7 @@ This project demonstrates:
 
 ---
 
-# 📬 Contact
+
 
 **David Asikpo**  
 Business Intelligence Analyst  
-
-- LinkedIn: *(add link)*  
-- Portfolio: *(add link)*  
-- Email: *(add email)*  
-
----
