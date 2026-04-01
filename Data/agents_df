@@ -1,0 +1,26 @@
+,agent_id,agent_name,team,hire_date
+0,A001,Amina Bello,Tier 1,2024-02-01
+1,A002,Tunde Adebayo,Tier 1,2023-05-11
+2,A003,Chioma Nwankwo,Tier 1,2024-07-18
+3,A004,Ibrahim Musa,Tier 1,2024-02-05
+4,A005,Kemi Ogunleye,Tier 1,2024-01-01
+5,A006,Emeka Obi,Tier 1,2023-11-11
+6,A007,Fatima Abdullahi,Tier 1,2021-05-02
+7,A008,Sola Ajayi,Tier 1,2022-04-12
+8,A009,Grace Eze,Tier 1,2024-05-23
+9,A010,Ahmed Lawal,Tier 1,2021-11-27
+10,A011,Ngozi Okafor,Tier 1,2021-03-29
+11,A012,Samuel Olatunji,Tier 1,2024-10-28
+12,A013,Zainab Sadiq,Tier 1,2024-01-29
+13,A014,Chinedu Uche,Tier 1,2023-05-22
+14,A015,Maryam Aliyu,Tier 2,2024-08-14
+15,A016,Oluwaseun Adeyemi,Tier 2,2020-05-10
+16,A017,Blessing Onyekachi,Tier 2,2024-08-12
+17,A018,Kabir Usman,Tier 2,2023-08-25
+18,A019,Esther Ibe,Tier 2,2022-02-08
+19,A020,Daniel Ekanem,Tier 2,2020-12-09
+20,A021,Hadiza Mohammed,Tier 2,2024-02-24
+21,A022,Uchechukwu Nnamdi,Tier 2,2023-12-08
+22,A023,Rukayat Balogun,Escalations,2022-04-30
+23,A024,Peter Essien,Escalations,2021-08-13
+24,A025,Sarah Zoe,Escalations,2022-03-30
