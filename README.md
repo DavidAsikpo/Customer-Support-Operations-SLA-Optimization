@@ -209,82 +209,92 @@ ORDER BY month;
 daily = data.groupby("ticket_created_date").size().reset_index(name="ticket_count")
 
 daily["rolling_7"] = daily["ticket_count"].rolling(7).mean()
-📌 Recommendations
-1. Introduce Performance Benchmarks
-Define minimum resolution targets
-Align output with workload
-2. Enforce SLA Prioritization
-Prioritize near-breach tickets
-Reduce response delays
-3. Improve Accountability
-Track agent-level performance
-Introduce performance scoring
-4. Reduce Resolution Time
-Optimize workflows
-Improve handling of complex tickets
-5. Optimize Work Allocation
-Balance ticket distribution
-Monitor capacity
-6. Address High-Volume Categories
-Reduce repeat issues
-Improve upstream processes
-7. Continuous Monitoring
-Use dashboards
-Enable proactive decisions
-🧠 Final Conclusion
 
-The system is not overloaded
-It is underperforming
+
+# 📌 Recommendations
+
+---
+
+## 1. Introduce Performance Benchmarks
+- Define minimum resolution targets for each agent  
+- Ensure output scales with assigned workload  
+
+---
+
+## 2. Enforce SLA-Based Prioritization
+- Prioritize tickets approaching SLA breach  
+- Reduce delays in first response  
+
+---
+
+## 3. Improve Agent Accountability
+- Track performance at the individual agent level  
+- Introduce standardized performance scoring  
+
+---
+
+## 4. Reduce Resolution Time
+- Optimize internal workflows  
+- Improve handling of high-complexity tickets  
+
+---
+
+## 5. Optimize Work Allocation
+- Balance ticket distribution across agents  
+- Monitor capacity versus workload  
+
+---
+
+## 6. Address High-Volume Categories
+- Identify and reduce repeat issues  
+- Improve upstream processes to limit ticket generation  
+
+---
+
+## 7. Implement Continuous Monitoring
+- Use dashboards for real-time performance tracking  
+- Enable proactive operational decision-making  
+
+---
+
+# 🧠 Final Conclusion
+
+> The system is not overloaded  
+> It is **underperforming**
 
 Improving:
 
-Response time
-Resolution efficiency
-Accountability
+- Response time  
+- Resolution efficiency  
+- Accountability  
 
 Will directly improve:
 
-SLA compliance
-Backlog reduction
-Customer experience
-💼 Portfolio Value
+- SLA compliance  
+- Backlog reduction  
+- Customer experience  
+
+---
+
+# 💼 Portfolio Value
 
 This project demonstrates:
 
-End-to-end analytics workflow
-Business-focused thinking
-Operational problem solving
-Dashboard storytelling
-Senior-level insights
-📬 Contact
-
-David Asikpo
-Business Intelligence Analyst
-
-LinkedIn: (add link)
-Portfolio: (add link)
-Email: (add email)
+- End-to-end analytics workflow  
+- Strong business-focused thinking  
+- Real operational problem solving  
+- Dashboard storytelling  
+- Senior-level analytical insights  
 
 ---
 
-# 🔥 Why THIS will work
+# 📬 Contact
 
-This version:
-- has proper spacing between sections  
-- uses consistent headings  
-- uses readable bullet formatting  
-- avoids markdown collapsing issues  
-- renders clean on GitHub  
+**David Asikpo**  
+Business Intelligence Analyst  
+
+- LinkedIn: *(add link)*  
+- Portfolio: *(add link)*  
+- Email: *(add email)*  
 
 ---
-
-# 🚀 If you want it PERFECT
-
-Next upgrade I can do:
-
-- Add **badges (Python, SQL, Power BI)**  
-- Add **table of contents at top**  
-- Add **collapsible sections (very clean look)**  
-
-Just say:  
-👉 **“make this top 1% GitHub README”**
